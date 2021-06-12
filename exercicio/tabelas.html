@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Tabela</title>
+        <meta http-equiv="content-type" content="text/html" ;charset="utf-8">
+    </head>
+    <body>
+        <h1>Tabelas</h1>
+
+        <h2>Célula com 2 colunas:</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th colspan="2">Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>José das Colves</td>
+                    <td>(22) 2728-6677</td>
+                    <td>(22) 2728-7766</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Célula com 2 linhas:</h2>
+        <table border="1">
+            <tbody>
+                <tr>
+                    <th>Nome:</th>
+                    <td>José das Colves</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Telefone:</th>
+                    <td>(22) 2728-6677</td>
+                </tr>
+                <tr>
+                    <td>(22) 2728-7766</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Tabela com Legenda</h2>
+        <table border="1">
+            <caption>Total de despesas por mês</caption>
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Janeiro</td>
+                    <td>R$ 1.500,00</td>
+                </tr>
+                <tr>
+                    <td>Fevereiro</td>
+                    <td>R$ 1.500,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
