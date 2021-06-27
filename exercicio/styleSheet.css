@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Dancing+Script:wght@700&family=Roboto+Slab:wght@700&display=swap');
+.titulo_secundario{
+    font-family: 'Dancing Script', 'Benne', cursive, 'Roboto Slab', serif;
+}
+h1, h3{
+    font-family: 'Roboto Slab', serif;
+}
+main{
+    background-image: url(bulbs.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+main p{
+    font-weight: bold;
+}
+article{
+    background-color: darkslategray;
+}
+article p{
+    font-weight: bold;
+    color:dodgerblue;
+    text-align: center;
+}
