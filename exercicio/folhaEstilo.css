@@ -1,0 +1,234 @@
+/*aplicando a outros elementos*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*corpo*/
+body{
+    margin: 0 100px 0 100px;
+}
+/*header*/
+.logo-header img{
+    margin: 5px;
+    border-width: 2px;
+    padding: 2px;
+}
+.navigation-bar{
+    display: grid;
+    grid-template-rows: 25% 50% 25%;
+}
+.grid-template-column{
+    display: grid;
+    grid-template-columns: 100px 150px;
+}
+.grid-template-column span button,input,a{
+    justify-content: end;
+}
+/*barra de navegação a direita*/
+/*first navigation bar*/
+.first-navigation-bar li{
+    text-decoration: underline;
+    min-width: 25px;
+    margin: 5px;
+    display: inline-block;
+}
+.first-navigation-bar li::after{
+    content: "|";
+    position: relative;
+    top: 0;
+    left: 6px;
+}
+.first-navigation-bar ul{
+    float: right;
+}
+
+.first-navigation-bar span{
+    min-width: 25px;
+    margin: 5px;
+    float: right;
+}
+
+/*second navigation bar*/
+.second-navigation-bar div{
+    float: right;
+}
+.second-navigation-bar span{
+    text-decoration: none;
+    min-width: 25px;
+    margin: 5px;
+}
+.second-navigation-bar .decoracao{
+    grid-column: 2;
+}
+.decoracao a{
+    margin: 0;
+}
+
+/*third navigation bar*/
+.third-navigation-bar ul{
+    float: right;
+}
+.third-navigation-bar li{
+    min-width: 25px;
+    width: 150px;
+    margin: 5px;
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    text-align: center;
+}
+.third-navigation-bar a{
+    text-decoration: none;
+}
+
+/*rodape*/
+footer{
+    margin-bottom: 10px;
+}
+.grid-3 div{
+    padding-top: 10px;
+}
+.footer-links li{
+    text-decoration: underline;
+    display: inline-block;
+    min-width: 25px;
+    margin: 5px;
+    font-size: 12px;
+}
+.footer-links li::after{
+    content: "|";
+    position: relative;
+    top: 0;
+    left: 5px;
+}
+.footer-links .list::after{
+    content: "";
+}
+.icon{
+    font-weight: bold;
+    height: 5px;
+    line-height: 5px;
+    font-size: 10px;
+}
+.side-footer span{
+    margin: 5px;
+    font-size: 12px;
+}
+.side-footer .span::after{
+    content: "|";
+    width: 5px;
+    position: relative;
+    top: 0;
+    left: 5px;
+}
+/*main content*/
+
+.main-content section{
+    display: grid;
+    padding: 0;
+    grid-template-rows: 1fr .5fr .5fr;
+    row-gap: 10px;
+}
+.section-column{
+    display: grid;
+    grid-template-columns: .75fr 1fr;
+}
+.section-column p{
+    padding: 15px;
+}
+.section-column img{
+    position: relative;
+    left: 20px;
+}
+.main-content section div{
+    background-color: #C0C0C0;
+}
+.main-content div h2,h3,img,p{
+    padding: 5px;
+}
+
+.main-content p{
+    width: 500px;
+}
+.aside-1 aside{
+    display: grid;
+    grid-template-rows: .5fr 1fr .5fr;
+    row-gap: 5px;
+}
+.aside-1 aside li{
+    display: block;
+}
+.aside-1 img{
+    border-style: solid;
+    background-color: #C0C0C0;
+    width: 2fr;
+}
+.aside-1 .border-list-1 li{
+    margin-bottom: 5px;
+    border-style: solid;
+    border-width: 2px;
+    text-align: left;
+}
+.aside-1 .border-list-2{
+    border-style: solid;
+    border-width: 2px;
+    background-color: #C0C0C0;
+}
+.aside-1 .border-list-1 li a{
+    color: #000;
+    padding: 2px;
+    text-decoration: none;
+}
+.aside-1 .border-list-2 li{
+    padding: 2px;
+}
+.aside-1 .border-list-2 li a{
+    color: #000;    
+    text-decoration: none;
+    font-size: 12px;
+}
+.aside-1 .border-list-2 li a::before{
+    padding-left: 2px;
+    content: " > ";
+    width: 100px;
+    color: #000;
+}
+.aside-2 aside{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 5px;
+}
+.aside-2 h3{
+    border-style: solid;
+}
+
+/*aplicando grids*/
+
+.grid-layout{/*divide o corpo em 3 linhas*/
+    display: grid;
+    grid-template-rows: 1fr 2frpx 1fr;
+    margin: 5px;
+}
+
+.gap{
+    row-gap: 20px;
+}
+
+.grid-1,.grid-2,.grid-3{
+    display: grid;
+}
+
+.grid-1{
+    grid-template-columns: 25% 75%;
+}
+
+.grid-2{
+    grid-template-columns: .5fr 2fr .75fr;
+    column-gap: 10px;
+}
+
+.grid-3{
+    border-top-style: solid;
+    border-width: 2px;
+    grid-template-columns: 40% 20% 40%;
+}
