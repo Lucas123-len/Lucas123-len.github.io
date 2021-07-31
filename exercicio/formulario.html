@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+    </head>
+    <body>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Reserva Hotel</legend>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="insira o nome">
+                <br>
+                <br>
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" placeholder="insira o telefone">
+                <br>
+                <br>
+                <label for="dataChegad">Data Chegada:</label>
+                <input type="text" id="dataChegada">
+                <br>
+                <br>
+                <label for="dataSaida">Data saida:</label>
+                <input type="text" id="dataSaida">
+                <br>
+                <br>
+                <label for="tipoQuarto">Tipo do quarto: Single (R$ 139,00), Double(R$ 220,00), Triplo(R$ 340,00)</label>
+                <input type="text" id="tipoQuarto">
+                <br>
+                <br>
+                <label for="numeroCriancas">Número Crianças menores de 5 anos(cada criança adicional custa R$ 30,00 a mais por noite) máximo de 4 hóspedes</label>
+                <input type="text" id="numeroCriancas">
+            </fieldset>
+            <input type="submit" name="enviar" onclick="retornoFormulario()">
+        </form>
+        <script src="formulario.js"></script>
+    </body>
+</html>
